@@ -23,7 +23,7 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 
-System.setProperty('webdriver.chrome.driver', 'D:\\2020_sel\\chromedriver.exe')
+System.setProperty('webdriver.chrome.driver', 'D:\\chromedriver.exe')
 
 WebDriver driver = new ChromeDriver()
 
@@ -75,6 +75,6 @@ def dd() {
 	Runtime runtime = Runtime.getRuntime()
 	Process process=runtime.exec('D:\\test.exe')
 }
-//driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]")).click()
+driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]")).click()
 
 
