@@ -1,0 +1,33 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Ronock,,,,2021-01-26 21:17:35,2021-01-26 21:18:24,49.693s,PASSED
+,,,,,,,
+Test Cases/ronockconcurent,,,,2021-01-26 21:17:36,2021-01-26 21:18:24,48.637s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", ""D:\chromedriver.exe"")",,,,2021-01-26 21:17:36,2021-01-26 21:17:36,0.002s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(),,,,2021-01-26 21:17:36,2021-01-26 21:17:42,5.676s,PASSED
+"timeouts().implicitlyWait(10, SECONDS)",,,,2021-01-26 21:17:42,2021-01-26 21:17:42,0.035s,PASSED
+"driver.get(""https://partnerwebtest.azurewebsites.net/Ads/CreateEditQuickAd?isFlyerAd=True"")",,,,2021-01-26 21:17:42,2021-01-26 21:17:44,2.052s,PASSED
+window().maximize(),,,,2021-01-26 21:17:44,2021-01-26 21:17:48,4.153s,PASSED
+"id(""logonIdentifier"")).sendKeys(""f565a00013@firemailbox.club"")",,,,2021-01-26 21:17:48,2021-01-26 21:17:48,0.153s,PASSED
+"id(""password"")).sendKeys(""QOoDjtP8OX"")",,,,2021-01-26 21:17:48,2021-01-26 21:17:48,0.094s,PASSED
+"id(""next"")).click()",,,,2021-01-26 21:17:48,2021-01-26 21:17:48,0.100s,PASSED
+"name(""AdvertisementTitle"")).sendKeys(""testflyer"")",,,,2021-01-26 21:17:48,2021-01-26 21:17:56,7.633s,PASSED
+"a = driver.findElement(By.name(""AdvertisementDetails""))",,,,2021-01-26 21:17:56,2021-01-26 21:17:56,0.026s,PASSED
+"a.sendKeys(""this is flyyer desc"")",,,,2021-01-26 21:17:56,2021-01-26 21:17:56,0.340s,PASSED
+try,,,,2021-01-26 21:17:56,2021-01-26 21:17:59,3.020s,PASSED
+"xpath(""/html/body/div[1]/div/div[3]/div/form/div/div[2]/div[1]/div/div[1]/div[4]/div[1]/button"")).click()",,,,2021-01-26 21:17:59,2021-01-26 21:18:00,0.482s,PASSED
+try,,,,2021-01-26 21:18:00,2021-01-26 21:18:03,3.007s,PASSED
+"xpath(""//button[@id='btnUpSaveGoToStudio']"")).click()",,,,2021-01-26 21:18:03,2021-01-26 21:18:08,4.583s,PASSED
+try,,,,2021-01-26 21:18:08,2021-01-26 21:18:11,3.004s,PASSED
+"xpath(""//button[@class='studio-rightnav__upload']"")).click()",,,,2021-01-26 21:18:11,2021-01-26 21:18:11,0.156s,PASSED
+dd(),,,,2021-01-26 21:18:11,2021-01-26 21:18:11,0.001s,PASSED
+runtime = Runtime.getRuntime(),,,,2021-01-26 21:18:11,2021-01-26 21:18:11,0.008s,PASSED
+"process = runtime.exec(""D:\test.exe"")",,,,2021-01-26 21:18:11,2021-01-26 21:18:11,0.004s,PASSED
+try,,,,2021-01-26 21:18:11,2021-01-26 21:18:16,5.004s,PASSED
+"xpath(""//button[@class='studio-rightnav__upload']"")).click()",,,,2021-01-26 21:18:16,2021-01-26 21:18:16,0.141s,PASSED
+test2(),,,,2021-01-26 21:18:16,2021-01-26 21:18:16,0.003s,PASSED
+runtime = Runtime.getRuntime(),,,,2021-01-26 21:18:16,2021-01-26 21:18:16,0.002s,PASSED
+"process = runtime.exec(""D:\suheal.exe"")",,,,2021-01-26 21:18:16,2021-01-26 21:18:16,0.016s,PASSED
+try,,,,2021-01-26 21:18:16,2021-01-26 21:18:21,5.007s,PASSED
+"xpath(""/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]"")).click()",,,,2021-01-26 21:18:21,2021-01-26 21:18:24,2.811s,PASSED
+"xpath(""//*[text()='Publish']"")).click()",,,,2021-01-26 21:18:24,2021-01-26 21:18:24,0.166s,PASSED
+"xpath(""//*[text()='Yes, publish']"")).click()",,,,2021-01-26 21:18:24,2021-01-26 21:18:24,0.418s,PASSED

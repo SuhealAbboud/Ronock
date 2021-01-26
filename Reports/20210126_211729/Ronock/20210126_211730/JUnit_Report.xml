@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Ronock" time="50.334" tests="1" failures="0" skips="0" errors="0">
+   <testsuite name="Ronock" tests="1" failures="0" errors="0" time="50.334" skips="0" timestamp="2021-01-26 21:17:35" hostname="Admin - DESKTOP-MVT5M5Q" id="Test Suites/Ronock">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Admin\\git\\Ronock\\Reports\\20210126_211729\\Ronock\\20210126_211730"/>
+         <property name="logFiles" value="C:\\Users\\Admin\\git\\Ronock\\Reports\\20210126_211729\\Ronock\\20210126_211730\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Admin - DESKTOP-MVT5M5Q"/>
+         <property name="hostAddress" value="192.168.1.106"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.9.0.208"/>
+      </properties>
+      <testcase name="Test Cases/ronockconcurent" time="48.637" classname="Test Cases/ronockconcurent" status="PASSED">
+         <system-out><![CDATA[2021-01-26 21:17:36 - [TEST_CASE][PASSED] - Test Cases/ronockconcurent: Test Cases/ronockconcurent
+
+2021-01-26 21:17:36 - [TEST_STEP][PASSED] - System.setProperty("webdriver.chrome.driver", "D:\chromedriver.exe"): null
+
+2021-01-26 21:17:36 - [TEST_STEP][PASSED] - driver = new org.openqa.selenium.chrome.ChromeDriver(): null
+
+2021-01-26 21:17:42 - [TEST_STEP][PASSED] - timeouts().implicitlyWait(10, SECONDS): null
+
+2021-01-26 21:17:42 - [TEST_STEP][PASSED] - driver.get("https://partnerwebtest.azurewebsites.net/Ads/CreateEditQuickAd?isFlyerAd=True"): null
+
+2021-01-26 21:17:44 - [TEST_STEP][PASSED] - window().maximize(): null
+
+2021-01-26 21:17:48 - [TEST_STEP][PASSED] - id("logonIdentifier")).sendKeys("f565a00013@firemailbox.club"): null
+
+2021-01-26 21:17:48 - [TEST_STEP][PASSED] - id("password")).sendKeys("QOoDjtP8OX"): null
+
+2021-01-26 21:17:48 - [TEST_STEP][PASSED] - id("next")).click(): null
+
+2021-01-26 21:17:48 - [TEST_STEP][PASSED] - name("AdvertisementTitle")).sendKeys("testflyer"): null
+
+2021-01-26 21:17:56 - [TEST_STEP][PASSED] - a = driver.findElement(By.name("AdvertisementDetails")): null
+
+2021-01-26 21:17:56 - [TEST_STEP][PASSED] - a.sendKeys("this is flyyer desc"): null
+
+2021-01-26 21:17:56 - [TEST_STEP][PASSED] - try: null
+
+2021-01-26 21:17:56 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-01-26 21:17:59 - [TEST_STEP][PASSED] - xpath("/html/body/div[1]/div/div[3]/div/form/div/div[2]/div[1]/div/div[1]/div[4]/div[1]/button")).click(): null
+
+2021-01-26 21:18:00 - [TEST_STEP][PASSED] - try: null
+
+2021-01-26 21:18:00 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-01-26 21:18:03 - [TEST_STEP][PASSED] - xpath("//button[@id='btnUpSaveGoToStudio']")).click(): null
+
+2021-01-26 21:18:08 - [TEST_STEP][PASSED] - try: null
+
+2021-01-26 21:18:08 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-01-26 21:18:11 - [TEST_STEP][PASSED] - xpath("//button[@class='studio-rightnav__upload']")).click(): null
+
+2021-01-26 21:18:11 - [TEST_STEP][PASSED] - dd(): null
+
+2021-01-26 21:18:11 - [TEST_STEP][PASSED] - runtime = Runtime.getRuntime(): null
+
+2021-01-26 21:18:11 - [TEST_STEP][PASSED] - process = runtime.exec("D:\test.exe"): null
+
+2021-01-26 21:18:11 - [TEST_STEP][PASSED] - try: null
+
+2021-01-26 21:18:11 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2021-01-26 21:18:16 - [TEST_STEP][PASSED] - xpath("//button[@class='studio-rightnav__upload']")).click(): null
+
+2021-01-26 21:18:16 - [TEST_STEP][PASSED] - test2(): null
+
+2021-01-26 21:18:16 - [TEST_STEP][PASSED] - runtime = Runtime.getRuntime(): null
+
+2021-01-26 21:18:16 - [TEST_STEP][PASSED] - process = runtime.exec("D:\suheal.exe"): null
+
+2021-01-26 21:18:16 - [TEST_STEP][PASSED] - try: null
+
+2021-01-26 21:18:16 - [TEST_STEP][PASSED] - Thread.sleep(5000): null
+
+2021-01-26 21:18:21 - [TEST_STEP][PASSED] - xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]")).click(): null
+
+2021-01-26 21:18:24 - [TEST_STEP][PASSED] - xpath("//*[text()='Publish']")).click(): null
+
+2021-01-26 21:18:24 - [TEST_STEP][PASSED] - xpath("//*[text()='Yes, publish']")).click(): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-01-26 21:17:35 - [TEST_SUITE][PASSED] - Ronock: Test Cases/ronockconcurent]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

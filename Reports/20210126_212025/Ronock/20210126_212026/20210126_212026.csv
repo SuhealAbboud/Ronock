@@ -1,0 +1,53 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Ronock,,,,2021-01-26 21:20:31,2021-01-26 21:22:38,2m - 7.275s,ERROR
+,,,,,,,
+Test Cases/ronockconcurent,,,,2021-01-26 21:20:32,2021-01-26 21:21:21,49.082s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", ""D:\chromedriver.exe"")",,,,2021-01-26 21:20:32,2021-01-26 21:20:32,0.002s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(),,,,2021-01-26 21:20:32,2021-01-26 21:20:38,5.844s,PASSED
+"timeouts().implicitlyWait(10, SECONDS)",,,,2021-01-26 21:20:38,2021-01-26 21:20:38,0.035s,PASSED
+"driver.get(""https://partnerwebtest.azurewebsites.net/Ads/CreateEditQuickAd?isFlyerAd=True"")",,,,2021-01-26 21:20:38,2021-01-26 21:20:40,2.431s,PASSED
+window().maximize(),,,,2021-01-26 21:20:40,2021-01-26 21:20:45,4.230s,PASSED
+"id(""logonIdentifier"")).sendKeys(""f565a00013@firemailbox.club"")",,,,2021-01-26 21:20:45,2021-01-26 21:20:45,0.166s,PASSED
+"id(""password"")).sendKeys(""QOoDjtP8OX"")",,,,2021-01-26 21:20:45,2021-01-26 21:20:45,0.077s,PASSED
+"id(""next"")).click()",,,,2021-01-26 21:20:45,2021-01-26 21:20:45,0.059s,PASSED
+"name(""AdvertisementTitle"")).sendKeys(""testflyer"")",,,,2021-01-26 21:20:45,2021-01-26 21:20:53,7.479s,PASSED
+"a = driver.findElement(By.name(""AdvertisementDetails""))",,,,2021-01-26 21:20:53,2021-01-26 21:20:53,0.023s,PASSED
+"a.sendKeys(""this is flyyer desc"")",,,,2021-01-26 21:20:53,2021-01-26 21:20:53,0.159s,PASSED
+try,,,,2021-01-26 21:20:53,2021-01-26 21:20:56,3.017s,PASSED
+"xpath(""/html/body/div[1]/div/div[3]/div/form/div/div[2]/div[1]/div/div[1]/div[4]/div[1]/button"")).click()",,,,2021-01-26 21:20:56,2021-01-26 21:20:56,0.457s,PASSED
+try,,,,2021-01-26 21:20:56,2021-01-26 21:20:59,3.005s,PASSED
+"xpath(""//button[@id='btnUpSaveGoToStudio']"")).click()",,,,2021-01-26 21:20:59,2021-01-26 21:21:04,4.641s,PASSED
+try,,,,2021-01-26 21:21:04,2021-01-26 21:21:07,3.005s,PASSED
+"xpath(""//button[@class='studio-rightnav__upload']"")).click()",,,,2021-01-26 21:21:07,2021-01-26 21:21:07,0.133s,PASSED
+dd(),,,,2021-01-26 21:21:07,2021-01-26 21:21:07,0.001s,PASSED
+runtime = Runtime.getRuntime(),,,,2021-01-26 21:21:07,2021-01-26 21:21:07,0.009s,PASSED
+"process = runtime.exec(""D:\test.exe"")",,,,2021-01-26 21:21:07,2021-01-26 21:21:07,0.004s,PASSED
+try,,,,2021-01-26 21:21:07,2021-01-26 21:21:12,5.002s,PASSED
+"xpath(""//button[@class='studio-rightnav__upload']"")).click()",,,,2021-01-26 21:21:12,2021-01-26 21:21:12,0.061s,PASSED
+test2(),,,,2021-01-26 21:21:12,2021-01-26 21:21:12,0.001s,PASSED
+runtime = Runtime.getRuntime(),,,,2021-01-26 21:21:12,2021-01-26 21:21:12,0.001s,PASSED
+"process = runtime.exec(""D:\suheal.exe"")",,,,2021-01-26 21:21:12,2021-01-26 21:21:12,0.003s,PASSED
+try,,,,2021-01-26 21:21:12,2021-01-26 21:21:17,5.004s,PASSED
+"xpath(""/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]"")).click()",,,,2021-01-26 21:21:17,2021-01-26 21:21:20,2.975s,PASSED
+"xpath(""//*[text()='Publish']"")).click()",,,,2021-01-26 21:21:20,2021-01-26 21:21:20,0.198s,PASSED
+"xpath(""//*[text()='Yes, publish']"")).click()",,,,2021-01-26 21:21:20,2021-01-26 21:21:21,0.520s,PASSED
+,,,,,,,
+Test Cases/ronockconcurent,,,,2021-01-26 21:21:21,2021-01-26 21:21:36,15.359s,ERROR
+"System.setProperty(""webdriver.chrome.driver"", ""D:\chromedriver.exe"")",,,,2021-01-26 21:21:21,2021-01-26 21:21:21,0.001s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(),,,,2021-01-26 21:21:21,2021-01-26 21:21:36,15.273s,PASSED
+,,,,,,,
+Test Cases/ronockconcurent,,,,2021-01-26 21:21:36,2021-01-26 21:21:51,15.337s,ERROR
+"System.setProperty(""webdriver.chrome.driver"", ""D:\chromedriver.exe"")",,,,2021-01-26 21:21:36,2021-01-26 21:21:36,0.001s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(),,,,2021-01-26 21:21:36,2021-01-26 21:21:51,15.294s,PASSED
+,,,,,,,
+Test Cases/ronockconcurent,,,,2021-01-26 21:21:52,2021-01-26 21:22:07,15.395s,ERROR
+"System.setProperty(""webdriver.chrome.driver"", ""D:\chromedriver.exe"")",,,,2021-01-26 21:21:52,2021-01-26 21:21:52,0.000s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(),,,,2021-01-26 21:21:52,2021-01-26 21:22:07,15.349s,PASSED
+,,,,,,,
+Test Cases/ronockconcurent,,,,2021-01-26 21:22:07,2021-01-26 21:22:22,15.420s,ERROR
+"System.setProperty(""webdriver.chrome.driver"", ""D:\chromedriver.exe"")",,,,2021-01-26 21:22:07,2021-01-26 21:22:07,0.002s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(),,,,2021-01-26 21:22:07,2021-01-26 21:22:22,15.369s,PASSED
+,,,,,,,
+Test Cases/ronockconcurent,,,,2021-01-26 21:22:22,2021-01-26 21:22:38,15.449s,ERROR
+"System.setProperty(""webdriver.chrome.driver"", ""D:\chromedriver.exe"")",,,,2021-01-26 21:22:22,2021-01-26 21:22:22,0.001s,PASSED
+driver = new org.openqa.selenium.chrome.ChromeDriver(),,,,2021-01-26 21:22:22,2021-01-26 21:22:38,15.403s,PASSED

@@ -33,9 +33,9 @@ driver.get('https://partnerwebtest.azurewebsites.net/Ads/CreateEditQuickAd?isFly
 
 driver.manage().window().maximize()
 
-driver.findElement(By.id('logonIdentifier')).sendKeys('32866f84f9@firemailbox.club')
+driver.findElement(By.id('logonIdentifier')).sendKeys('f565a00013@firemailbox.club')
 
-driver.findElement(By.id('password')).sendKeys('UXYaMHmnWb')
+driver.findElement(By.id('password')).sendKeys('QOoDjtP8OX')
 
 driver.findElement(By.id('next')).click()
 
@@ -52,8 +52,6 @@ try {
 }
 driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/form/div/div[2]/div[1]/div/div[1]/div[4]/div[1]/button")).click();
 
-//driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/form/div/div[2]/div[1]/div/div[1]/div[4]/div[4]/div[1]/span/div")).click()
-//driver.findElement(By.xpath("//div[@class='item']")).click()
 try {
 	Thread.sleep(3000);
 } catch (InterruptedException e) {
@@ -77,11 +75,27 @@ try {
 	e.printStackTrace();
 }
 
+driver.findElement(By.xpath("//button[@class='studio-rightnav__upload']")).click()
+test2()
+try {
+	Thread.sleep(5000);
+} catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+
 
 def dd() {
 	Runtime runtime = Runtime.getRuntime()
 	Process process=runtime.exec('D:\\test.exe')
 }
+
+def test2() {
+	Runtime runtime = Runtime.getRuntime()
+	Process process=runtime.exec('D:\\suheal.exe')
+}
 driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]")).click()
+driver.findElement(By.xpath("//*[text()='Publish']")).click()
+driver.findElement(By.xpath("//*[text()='Yes, publish']")).click()
 
 
