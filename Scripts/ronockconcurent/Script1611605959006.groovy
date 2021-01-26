@@ -44,9 +44,16 @@ driver.findElement(By.name('AdvertisementTitle')).sendKeys('testflyer')
 WebElement a = driver.findElement(By.name('AdvertisementDetails'))
 
 a.sendKeys('this is flyyer desc')
+try {
+	Thread.sleep(3000);
+} catch (InterruptedException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/form/div/div[2]/div[1]/div/div[1]/div[4]/div[1]/button")).click();
 
-driver.findElement(By.xpath("//div[@class='text']")).click()
-driver.findElement(By.xpath("//div[@class='item']")).click()
+//driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/form/div/div[2]/div[1]/div/div[1]/div[4]/div[4]/div[1]/span/div")).click()
+//driver.findElement(By.xpath("//div[@class='item']")).click()
 try {
 	Thread.sleep(3000);
 } catch (InterruptedException e) {
