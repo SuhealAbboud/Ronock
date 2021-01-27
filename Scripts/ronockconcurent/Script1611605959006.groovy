@@ -23,19 +23,19 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 
-System.setProperty('webdriver.chrome.driver', 'D:\\chromedriver.exe')
+System.setProperty('webdriver.chrome.driver', 'C:\\chromedriver.exe')
 
 WebDriver driver = new ChromeDriver()
 
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)
 
-driver.get('https://partnerwebtest.azurewebsites.net/Ads/CreateEditQuickAd?isFlyerAd=True')
+driver.get('https://jo.ronock.com/Ads/CreateEditQuickAd?isFlyerAd=True')
 
 driver.manage().window().maximize()
 
-driver.findElement(By.id('logonIdentifier')).sendKeys('f565a00013@firemailbox.club')
+driver.findElement(By.id('email')).sendKeys('staging@mozej.com')
 
-driver.findElement(By.id('password')).sendKeys('QOoDjtP8OX')
+driver.findElement(By.id('password')).sendKeys('pwAIuaanR7')
 
 driver.findElement(By.id('next')).click()
 
@@ -87,15 +87,15 @@ try {
 
 def dd() {
 	Runtime runtime = Runtime.getRuntime()
-	Process process=runtime.exec('D:\\test.exe')
+	Process process=runtime.exec('C:\\test.exe')
 }
 
 def test2() {
 	Runtime runtime = Runtime.getRuntime()
-	Process process=runtime.exec('D:\\suheal.exe')
+	Process process=runtime.exec('C:\\suheal.exe')
 }
 driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]")).click()
 driver.findElement(By.xpath("//*[text()='Publish']")).click()
 driver.findElement(By.xpath("//*[text()='Yes, publish']")).click()
-
+driver.close()
 
