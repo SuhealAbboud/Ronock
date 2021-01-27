@@ -29,13 +29,13 @@ WebDriver driver = new ChromeDriver()
 
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)
 
-driver.get('https://jo.ronock.com/Ads/CreateEditQuickAd?isFlyerAd=True')
+driver.get('https://jostg.ronock.com/Ads/CreateEditQuickAd?isFlyerAd=True')
 
 driver.manage().window().maximize()
 
-driver.findElement(By.id('email')).sendKeys('staging@mozej.com')
+driver.findElement(By.id('email')).sendKeys('8209b7e6a9@firemailbox.club')
 
-driver.findElement(By.id('password')).sendKeys('pwAIuaanR7')
+driver.findElement(By.id('password')).sendKeys('qdXOW9kMOO')
 
 driver.findElement(By.id('next')).click()
 
