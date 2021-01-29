@@ -24,6 +24,16 @@ import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import java.text.SimpleDateFormat
 import java.util.Date
+import java.awt.AWTException;
+import java.awt.Robot
+import java.awt.Toolkit
+import java.awt.datatransfer.StringSelection
+import java.awt.event.KeyEvent
+
+Date d1 = new Date()
+SimpleDateFormat df = new SimpleDateFormat("MM/dd/YYYY HH:mm:ss a")
+String formattedDate = df.format(d1)
+System.out.print(formattedDate)
 
 System.setProperty('webdriver.chrome.driver', 'C:\\chromedriver.exe')
 
@@ -41,69 +51,23 @@ driver.findElement(By.id('password')).sendKeys('qdXOW9kMOO')
 
 driver.findElement(By.id('next')).click()
 
-Date d1 = new Date()
-SimpleDateFormat df = new SimpleDateFormat("MM/dd/YYYY HH:mm:ss a")
-String formattedDate = df.format(d1)
-System.out.print(formattedDate)
-
 driver.findElement(By.name('AdvertisementTitle')).sendKeys('testflyer ' + formattedDate)
 
 WebElement a = driver.findElement(By.name('AdvertisementDetails'))
 
 a.sendKeys('this is flyyer desc ' + formattedDate)
-try {
-	Thread.sleep(3000);
-} catch (InterruptedException e) {
-	// TODO Auto-generated catch block
-	e.printStackTrace();
-}
+sleep(200)
 driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/form/div/div[2]/div[1]/div/div[1]/div[4]/div[1]/button")).click();
-
-try {
-	Thread.sleep(3000);
-} catch (InterruptedException e) {
-	// TODO Auto-generated catch block
-	e.printStackTrace();
-}
+sleep(2000)
 driver.findElement(By.xpath("//button[@id='btnUpSaveGoToStudio']")).click()
-try {
-	Thread.sleep(3000);
-} catch (InterruptedException e) {
-	// TODO Auto-generated catch block
-	e.printStackTrace();
-}
-
+sleep(1000)
 driver.findElement(By.xpath("//button[@class='studio-rightnav__upload']")).click()
-dd()
-try {
-	Thread.sleep(5000);
-} catch (InterruptedException e) {
-	// TODO Auto-generated catch block
-	e.printStackTrace();
-}
-
+upload1("C:\\thumbnail.jpg")
 driver.findElement(By.xpath("//button[@class='studio-rightnav__upload']")).click()
-test2()
-try {
-	Thread.sleep(5000);
-} catch (InterruptedException e) {
-	// TODO Auto-generated catch block
-	e.printStackTrace();
-}
+upload1("C:\\thumbnail2.jpg")
 
-
-def dd() {
-	Runtime runtime = Runtime.getRuntime()
-	Process process=runtime.exec('C:\\test.exe')
-}
-
-def test2() {
-	Runtime runtime = Runtime.getRuntime()
-	Process process=runtime.exec('C:\\suheal.exe')
-}
 driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]")).click()
 WebElement publish= driver.findElement(By.xpath("//*[text()='Publish']"))
-
 
 if (publish.isEnabled()) {
 	
@@ -114,4 +78,45 @@ if (publish.isEnabled()) {
 }
 driver.findElement(By.xpath("//*[text()='Yes, publish']")).click()
 driver.close()
+
+def upload1(String path) {
+	Robot rb = new Robot();
+	try {
+		Thread.sleep(1000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	StringSelection str = new StringSelection(path);
+	Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+ 
+	 // press Contol+V for pasting
+	 rb.keyPress(KeyEvent.VK_CONTROL);
+	 rb.keyPress(KeyEvent.VK_V);
+ 
+	// release Contol+V for pasting
+	rb.keyRelease(KeyEvent.VK_CONTROL);
+	rb.keyRelease(KeyEvent.VK_V);
+ 
+	// for pressing and releasing Enter
+	rb.keyPress(KeyEvent.VK_ENTER);
+	rb.keyRelease(KeyEvent.VK_ENTER);
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+
+def sleep(int a) {
+	try {
+		Thread.sleep(a);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
 
