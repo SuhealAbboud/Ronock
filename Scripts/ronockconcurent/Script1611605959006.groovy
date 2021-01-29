@@ -22,6 +22,8 @@ import java.util.concurrent.TimeUnit as TimeUnit
 import com.kms.katalon.core.configuration.RunConfiguration
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
+import java.text.SimpleDateFormat
+import java.util.Date
 
 System.setProperty('webdriver.chrome.driver', 'C:\\chromedriver.exe')
 
@@ -39,11 +41,16 @@ driver.findElement(By.id('password')).sendKeys('qdXOW9kMOO')
 
 driver.findElement(By.id('next')).click()
 
-driver.findElement(By.name('AdvertisementTitle')).sendKeys('testflyer')
+Date d1 = new Date()
+SimpleDateFormat df = new SimpleDateFormat("MM/dd/YYYY HH:mm:ss a")
+String formattedDate = df.format(d1)
+System.out.print(formattedDate)
+
+driver.findElement(By.name('AdvertisementTitle')).sendKeys('testflyer ' + formattedDate)
 
 WebElement a = driver.findElement(By.name('AdvertisementDetails'))
 
-a.sendKeys('this is flyyer desc')
+a.sendKeys('this is flyyer desc ' + formattedDate)
 try {
 	Thread.sleep(3000);
 } catch (InterruptedException e) {
@@ -95,7 +102,16 @@ def test2() {
 	Process process=runtime.exec('C:\\suheal.exe')
 }
 driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]")).click()
-driver.findElement(By.xpath("//*[text()='Publish']")).click()
+WebElement publish= driver.findElement(By.xpath("//*[text()='Publish']"))
+
+
+if (publish.isEnabled()) {
+	
+	publish.click()
+} else {
+	
+	driver.close()
+}
 driver.findElement(By.xpath("//*[text()='Yes, publish']")).click()
 driver.close()
 
