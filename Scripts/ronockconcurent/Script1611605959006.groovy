@@ -56,15 +56,26 @@ driver.findElement(By.name('AdvertisementTitle')).sendKeys('testflyer ' + format
 WebElement a = driver.findElement(By.name('AdvertisementDetails'))
 
 a.sendKeys('this is flyyer desc ' + formattedDate)
-sleep(200)
+//sleep(200)
 driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/form/div/div[2]/div[1]/div/div[1]/div[4]/div[1]/button")).click();
 sleep(2000)
 driver.findElement(By.xpath("//button[@id='btnUpSaveGoToStudio']")).click()
 sleep(1000)
-driver.findElement(By.xpath("//button[@class='studio-rightnav__upload']")).click()
+WebElement uploadbutton = driver.findElement(By.xpath("//button[@class='studio-rightnav__upload']"))
+uploadbutton.click()
+WebElement checkflyer = driver.findElement(By.xpath("//div[@id='image-empty']"))
 upload1("C:\\thumbnail.jpg")
-driver.findElement(By.xpath("//button[@class='studio-rightnav__upload']")).click()
-upload1("C:\\thumbnail2.jpg")
+sleep(1000)
+
+if (checkflyer.isDisplayed()) {
+	driver.close();
+	
+} else {
+	
+	sleep(1000)
+	uploadbutton.click();
+	upload1("C:\\thumbnail2.jpg");
+}
 
 driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]")).click()
 WebElement publish= driver.findElement(By.xpath("//*[text()='Publish']"))
