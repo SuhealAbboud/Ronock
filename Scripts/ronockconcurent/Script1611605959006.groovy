@@ -77,6 +77,8 @@ if (checkflyer.isDisplayed()) {
 	upload1("C:\\thumbnail2.jpg");
 }
 
+sleep(1000)
+
 driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/div/div[1]/div/div/div[2]/a[2]")).click()
 WebElement publish= driver.findElement(By.xpath("//*[text()='Publish']"))
 
@@ -93,7 +95,7 @@ driver.close()
 def upload1(String path) {
 	Robot rb = new Robot();
 	try {
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
